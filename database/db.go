@@ -35,8 +35,6 @@ func NewRepo(testMock bool) {
 		}
 	}
 
-	//defer sqlDB.Close()
-
 	db, err := gorm.Open("postgres", sqlDB)
 	if err != nil {
 		panic(err)
